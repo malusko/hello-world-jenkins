@@ -26,16 +26,6 @@ mvn clean install
 
 This will compile the code, run the tests, and create a `war` file in the `webapp/target` directory.
 
-## How to Run
-
-You can run the web application using the Jetty Maven plugin. From the root directory, run:
-
-```bash
-mvn jetty:run
-```
-
-The application will be available at `http://localhost:8080`.
-
 ## Deployment
 
 This project is configured for deployment with Docker and Kubernetes. The `Dockerfile` is used to create a Docker image of the application, and the `regapp-deploy.yml` and `regapp-service.yml` files are used to deploy the application to a Kubernetes cluster.
